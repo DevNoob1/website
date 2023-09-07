@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Professional Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+        /* body {
+            background: url(https://cellularnews.com/images/hd/vertical-1044X1856-0hwz5785na3xo50h.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } */
+
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
+
+        .pf {
+            animation: levitate 4s infinite;
+        }
+
+        @keyframes levitate {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Adjust the distance as needed */
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .bgimg {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('./b5.jpg');
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width: 40%;">
+        <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display: none; padding-top: 150px; right: 0; z-index: 2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding: 0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left: 40%;">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+            style="width: auto; right: 0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding: 128px 16px" id="home">
+            <img class="pf" src="./1693071026038.jpeg" alt=""
+                style="height:30vmin ; border-radius: 50%; box-shadow: 0px 0px 10px rgb(175, 175, 255);">
+            <h1 class="w3-jumbo"><b>Ayush Kumar Rai</b></h1>
+            <p>Software Engineer.</p>
+            <img src="./b5.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display: block; width: 60%; margin: auto;">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <a href="./AyushKr_Resume.pdf" style="text-decoration: none;" download>
+                    <i class="fa fa-download"></i> Download Resume
+                </a>
+            </button>
+
+        </header>
+        <footer class="w3-container w3-padding-20 w3-center w3-opacity w3-xlarge" style="margin-top: -80px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 4.5vmin;
+        ">
+            <a href="https://www.instagram.com/stoic.sapien/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/AyushKu43427147"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://github.com/DevNoob1"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-kumar-rai-88330123b/"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </footer>
+        <!-- Portfolio Section -->
+
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>About</h2>
+            <hr class="w3-opacity">
+            <p>A third-year B.Tech student, I bring a blend of enthusiasm and
+                technical acumen to the table. With a passion for coding since my
+                school days and a dedicated focus on mastering Data Structures
+                and Algorithms (DSA), I possess a strong foundation for problem solving. <br>
+                Embarking on the journey of front-end development, I've
+                transitioned from a learner to a creator, capable of crafting polished
+                websites. My effective communication, adaptability to team
+                dynamics or individual contributions, and innate drive to learn
+                through hands-on experiences make me a valuable candidate for
+                internships or job roles.
+
+            </p>
+            <h3 class="w3-padding-16">My Skills</h3>
+            <p class="w3-wide">Web Development</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-blue-grey" style="width: 90%;">
+                    <pre></pre>
+                </div>
+            </div>
+            <p class="w3-wide">Problem Solving</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-blue-grey" style="width: 80%;">
+                    <pre></pre>
+                </div>
+            </div>
+            <p class="w3-wide">Soft Skills</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-blue-grey" style="width: 80%;">
+                    <pre></pre>
+                </div>
+            </div>
+            <h3 class="w3-padding-16">Programming Languages</h3>
+            <p class="w3-wide">C++</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-pale-red" style="width: 90%;">
+                    <pre></pre>
+                </div>
+            </div><br>
+            <p class="w3-wide">Python</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-pale-red" style="width: 80%;">
+                    <pre></pre>
+                </div>
+            </div><br>
+            <p class="w3-wide">Javascript</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-pale-red" style="width: 80%;">
+                    <pre></pre>
+                </div>
+            </div><br>
+            <p class="w3-wide">Go</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-pale-red" style="width: 60%;">
+                    <pre></pre>
+                </div>
+            </div><br>
+            <br>
+
+
+            <h1 class="w3-padding-24">Hackathons</h1>
+
+
+            <div>
+                <a href=" https://carecommune.onrender.com/auth"><img
+                        src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/575/548/datas/medium.png"
+                        alt="">
+                </a>
+                <div>
+                    <h2>CareCommune</h2>
+                    <p style="width:90%;">CareCommune: Empowering organizers to host events and volunteers to find
+                        and
+                        join
+                        opportunities seamlessly.
+                    </p>
+                    <p style="width:90%;"><b>I designed the front-end for CareCommune, creating an intuitive
+                            interface,
+                            and
+                            learned GSAP during
+                            the process.</b> </p>
+                    <h4>🏆 Honorary Mention (4th Place)</h4>
+                </div>
+            </div>
+            <div style="width: 100%; height: 2px; background-color: red;"></div> <br>
+            <div>
+                <a href="https://axisbankhrllm.onrender.com/auth"><img style="height: 30vmin; width: 40vmin;"
+                        src="https://img.etimg.com/thumb/msid-101743164,width-630,resizemode-4,imgsize-119775/axis-bank-share-price-live-updates-14-jul-2023.jpg"
+                        alt="">
+                </a>
+                <h2>Axis Bank</h2>
+                <p style="width: 80%;">Using LLM for candidate assessment: Proficiency analysis aligned with job
+                    requirements.
+                </p>
+                <p style="width: 80%;"><b>I designed the front-end for Axis Bank, creating several forms, making the
+                        website responsive, checking the front-end interfaces given by other members of Team</b>
+                </p>
+            </div>
+
+
+            <!-- Testimonials -->
+            <h3 class="w3-padding-24">My Projects</h3>
+            <img src="https://i.ibb.co/s9Qys2j/logo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                style="width: 80px;">
+            <p><span class="w3-large w3-text-black w3-margin-right">Youtube Clone </span> <button class="w3-black"
+                    style="
+                    display: flex; 
+                    gap: 20px;
+                    "><a style="text-decoration: none;" href="https://youtube-clone-devnoob1.vercel.app/">Link</a> ||
+                    <a style="text-decoration: none;" href="https://github.com/DevNoob1/Youtube_clone">code</a></button>
+            </p>
+            <p>Developed YouTube clone with core features using React and
+                the YouTube v3 Rapid API.
+            </p>
+            <img src="https://i01.appmifile.com/webfile/globalimg/mobile/logo/mi.png" alt="Avatar"
+                class="w3-left w3-circle w3-margin-right" style="width: 80px;">
+            <p><span class="w3-large w3-text-black w3-margin-right">MI Online Store</span> <button class="w3-black"
+                    style="
+                    display: flex; 
+                    gap: 20px;
+                    "><a style="text-decoration: none;" href="https://mi-store-clone-react-1.vercel.app/">Link</a> ||
+                    <a style="text-decoration: none;"
+                        href="https://github.com/DevNoob1/MI_Store-Clone-react_1">code</a></button>
+            </p>
+            <p>Replicated e-commerce features, prioritized user
+                experience, and implemented complex functionalities
+            </p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4451/4451008.png" alt="Avatar"
+                class="w3-left w3-circle w3-margin-right" style="width: 80px;">
+            <p><span class="w3-large w3-text-black w3-margin-right">Car Renting</span> <button class="w3-black" style="
+                    display: flex; 
+                    gap: 20px;
+                    "><a style="text-decoration: none;" href="https://rent-car-chi.vercel.app">Link</a> ||
+                    <a style="text-decoration: none;" href="https://github.com/DevNoob1/RENT_car">code</a></button>
+            </p>
+            <p>Replicated e-commerce features, prioritized user
+                experience, and implemented complex functionalities
+            </p>
+
+
+            <!-- Grid for pricing tables -->
+
+
+            <!-- End About Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom: 64px;">
+            <h2>Contact Me</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section" style="display: flex; flex-direction: column; justify-content: center;">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> INDIA</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91 7010997765</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> ayushkr.r1@gmail.com</p>
+            </div>
+
+
+            </form>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
